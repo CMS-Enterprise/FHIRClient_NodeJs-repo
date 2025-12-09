@@ -120,7 +120,7 @@ export class PresignedURLAPIHandler {
         }
 
         const fileNamePostFixString = response.response?.status === 200 ? 'response-success' : 'response-failed';
-        const successReponse: BundlePractitionerResponse = response.response!.data as BundlePractitionerResponse;
+        const successReponse: PresignedURLResponse = response.response!.data as PresignedURLResponse;
         await fileWriter.writeJson('presigned-url-nodejs', `${fileNamePostFixString}-${Request.id}`, successReponse);
         return successReponse;
     }
