@@ -37,7 +37,8 @@ export class AuthenticationAPIHandler {
             ClientSecret,
             Scope,
             EndpointURL,
-            HttpClientRequestTimeOutSeconds
+            HttpClientRequestTimeOutSeconds,
+            UserAgent,
         } = this.authenticationAPISettings;
 
         const headers: Record<string, string> = {
@@ -45,6 +46,7 @@ export class AuthenticationAPIHandler {
             'clientid': ClientId,
             'clientsecret': ClientSecret,
             'scope': Scope,
+            'User-Agent': UserAgent
         };
 
         const { baseUrl, resourcePath } = URLUtils.parseUrl(EndpointURL);

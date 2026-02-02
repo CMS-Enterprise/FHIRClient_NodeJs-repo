@@ -4,5 +4,6 @@ export interface AuthenticationAPI {
     Scope: string;
     EndpointURL: string;
     ContentType: string;
-    HttpClientRequestTimeOutSeconds: number
+    HttpClientRequestTimeOutSeconds: number;
+    UserAgent: string;
 }
