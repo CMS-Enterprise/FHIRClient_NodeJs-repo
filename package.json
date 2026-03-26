@@ -1,5 +1,5 @@
 {
-  "name": "fhirclient-nodejs",
+  "name": "esmd-fhir-client-nodejs",
   "version": "1.0.0",
   "main": "dist/main.js",
   "scripts": {
